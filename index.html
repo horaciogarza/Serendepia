@@ -3,14 +3,36 @@
 	<title>Serendepia</title>
 	<meta charset="UTF-8">
 
-		<!-- Latest compiled and minified CSS -->
+	
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAsMxwxAsI5sislbx4DiVhEfQgSBaHFar4",
+	    authDomain: "serendepia-8634a.firebaseapp.com",
+	    databaseURL: "https://serendepia-8634a.firebaseio.com",
+	    storageBucket: "",
+	    messagingSenderId: "661474835636"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script type="text/javascript" src="logic/login.js"></script>
+
+
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="customStyle/index.css">
 </head>
 <body>
@@ -22,8 +44,19 @@
 
 </div>
 	
+	<section class="login">
+		<div class="login-panel">			
+			<div class="login-panel-imgTwitter">
+				<figure>
+					<button href="#" id="btnLoginTwitter" class="btn btn-default" onclick="lol()">Login with Twitter</button>				
+				</figure>				
+			</div>			
+		</div>		
+	</section>
+	<footer>
+		<h3>Por Juan Gómez - GDG Cali</h3>
+	</footer>
 
-
-	<a class="btn btn-default"href="questions.html">Haz Click aquí para acceder al cuestionario</a>
+	<a class="btn btn-default" href="questions.html">Haz Click aquí para acceder al cuestionario</a>
 </body>
 </html>
